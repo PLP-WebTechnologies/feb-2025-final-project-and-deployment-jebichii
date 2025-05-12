@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TalilMart - Construction Materials</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav container">
+            <a href="/" class="logo">TalilMart</a>
+            <div class="nav-links">
+                <a href="/" class="active">Home</a>
+                <a href="/products.html">Products</a>
+                <a href="/about.html">About</a>
+                <a href="/contact.html">Contact</a>
+            </div>
+            <div class="cart-icon" id="cartIcon">
+                <span class="cart-count">0</span>
+                🛒
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container">
+                <h1>Quality Construction Materials</h1>
+                <p>Your trusted source for premium building supplies and construction materials</p>
+                <a href="/products.html" class="btn btn-primary">Shop Now</a>
+            </div>
+        </section>
+
+        <!-- Features -->
+        <section class="features">
+            <div class="container">
+                <div class="features-grid">
+                    <div class="feature">
+                        <div class="feature-icon">🚚</div>
+                        <h3>Fast Delivery</h3>
+                        <p>Same-day delivery for local orders</p>
+                    </div>
+                    <div class="feature">
+                        <div class="feature-icon">✓</div>
+                        <h3>Quality Guaranteed</h3>
+                        <p>All materials meet industry standards</p>
+                    </div>
+                    <div class="feature">
+                        <div class="feature-icon">👷</div>
+                        <h3>Expert Support</h3>
+                        <p>Professional advice available</p>
+                    </div>
+                    <div class="feature">
+                        <div class="feature-icon">⏰</div>
+                        <h3>Early Hours</h3>
+                        <p>Open early for contractor pickups</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Products -->
+        <section class="featured-products">
+            <div class="container">
+                <h2>Featured Products</h2>
+                <div class="products-grid" id="featuredProducts"></div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta">
+            <div class="container">
+                <h2>Need a Large Quantity?</h2>
+                <p>Get competitive pricing for bulk orders</p>
+                <a href="/contact.html" class="btn btn-secondary">Request Quote</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Cart Modal -->
+    <div class="cart-modal" id="cartModal">
+        <div class="cart-content">
+            <h2>Shopping Cart</h2>
+            <div class="cart-items" id="cartItems"></div>
+            <div class="cart-total">
+                <span>Total:</span>
+                <span id="cartTotal">$0.00</span>
+            </div>
+            <button class="btn btn-primary" id="checkoutBtn">Checkout</button>
+            <button class="btn btn-secondary" id="closeCart">Close</button>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>TaliMart</h3>
+                    <p>Quality construction materials for professionals</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <a href="/">Home</a>
+                    <a href="/products.html">Products</a>
+                    <a href="/about.html">About</a>
+                    <a href="/contact.html">Contact</a>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact</h3>
+                    <p>📞 (254) 123-4567</p>
+                    <p>📧 info@talimart.com</p>
+                    <p>📍 123 Builder St, Kapsabet City</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 TalilMart. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/products.js"></script>
+    <script src="js/cart.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
